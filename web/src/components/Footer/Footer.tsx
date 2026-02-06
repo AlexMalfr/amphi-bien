@@ -15,7 +15,7 @@ const Footer = () => {
               </p>
               <div className="footer-social">
                 <a
-                  href="https://github.com/AlexZeGamer/amphi-bien"
+                  href="https://github.com/AlexMalfr/amphi-bien"
                   className="social-link"
                 >
                   <i className="bi bi-github"></i>
