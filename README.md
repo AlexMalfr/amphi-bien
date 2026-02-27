@@ -1,4 +1,86 @@
-# README
+# AmphiBien
+
+**Le “Tripadvisor” des amphis ! 🎓**
+
+Site web full stack conçu par **[Alexandre MALFREYT](https://github.com/AlexMalfr)** & **[Julien ROSSE](https://github.com/JulienROSSE)** dans le cadre d'un cours de développement web en école d'ingénieurs.
+
+![landing-video](https://github.com/user-attachments/assets/578926c7-d74b-46d6-9cc6-568467adcda4)
+
+AmphiBien est un plateforme permettant aux étudiants de trouver, évaluer et signaler des problèmes dans les amphithéâtres de leur université. Les données sont créées de manière communautaire, fortement inspirée du fonctionnement de Google Maps.
+
+📄 [Rapport de projet](./Rapport%20AmphiBien.pdf) · 📊 [Présentation](./Présentation%20AmphiBien.pdf)
+
+---
+
+## Aperçu
+
+Page d'accueil
+
+<img width="1814" height="983" alt="image" src="https://github.com/user-attachments/assets/380c397d-559f-4707-bd37-bfb66ef5460b" />
+
+
+Liste des amphis avec carte
+
+<img width="1815" height="982" alt="image" src="https://github.com/user-attachments/assets/5e6df521-0c44-4b0f-a00d-ca397e4f88df" />
+
+
+Détail d'un amphi
+
+<img width="1834" height="1694" alt="image" src="https://github.com/user-attachments/assets/0061f4a3-19e8-4dcb-843f-dcee9b42bf94" />
+
+
+---
+
+## Fonctionnalités
+
+- 🗺️ Recherche d'amphis **à proximité** par géolocalisation
+- 📋 Fiche détaillée : photos, équipements, carte interactive, capacité
+- ⚠️ Signalement de problèmes (DANGER / PROBLÈME / NOTE) avec votes
+- 🏫 Navigation par université
+- 🔐 Authentification via Firebase (email + Google)
+- ☁️ Upload et recadrage automatique des images via GCP Storage
+
+---
+
+## Charte graphique
+
+Le design s'inspire d'**un brouillon sur feuille à carreaux** : papier ligné, polices manuscrites, éléments légèrement inclinés.
+
+- Thème CSS : [Bootswatch Sketchy](https://bootswatch.com/sketchy/)
+- Polices : **Cabin Sketch** (titres) & **Neucha** (corps de texte)
+
+Prototype Figma (design mobile-first) :
+
+![img80](https://github.com/user-attachments/assets/56a68d52-9d56-45ae-b5d1-a6b58c51936c)
+
+---
+
+## Stack technique
+
+| Couche | Technologie |
+|--------|-------------|
+| Framework full-stack | [RedwoodJS](https://redwoodjs.com/) |
+| Langage | TypeScript |
+| Frontend | React 18 |
+| Styling | Tailwind CSS + Bootstrap (Sketchy) |
+| API | GraphQL (GraphQL Yoga) |
+| ORM | Prisma |
+| Base de données | PostgreSQL (prod) / SQLite (dev) |
+| Authentification | Firebase Authentication |
+| Stockage images | Google Cloud Storage + Cloud Functions |
+| Carte | Leaflet + OpenStreetMap |
+| Hébergement | Google Cloud Run (serverless) |
+| Nom de domaine | amphi-bien.fr (OVH → GCP Load Balancer) |
+| Versioning | Git / GitHub |
+
+---
+---
+---
+---
+---
+---
+
+# README par défaut RedWoodJS
 
 Welcome to [RedwoodJS](https://redwoodjs.com)!
 
